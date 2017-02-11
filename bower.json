@@ -1,0 +1,22 @@
+{
+  "name": "osm-disabilities-webapp",
+  "homepage": "https://github.com/WitaloCarlos/osm-disabilities-webapp",
+  "authors": [
+    "Witalo Carlos X. Albuquerque <witalocarlos@gmail.com>"
+  ],
+  "description": "Front end of OSM Disabilities Extract",
+  "main": "index.html",
+  "keywords": [
+    "angular",
+    "ui-router",
+    "osm",
+    "disabilities",
+    "openlayers"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.6.1",
+    "angular-ui-router": "0.3.1",
+    "bootstrap": "^3.3.7"
+  }
+}
