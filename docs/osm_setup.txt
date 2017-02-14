@@ -1,0 +1,19 @@
+sudo -u postgres createdb --encoding=UTF8 --owner=postgres mapzen_new_york
+
+sudo psql --username=postgres --dbname=mapzen_new_york -c "CREATE EXTENSION IF NOT EXISTS postgis; CREATE EXTENSION IF NOT EXISTS hstore"
+
+sudo psql -U postgres -W -d mapzen_new_york -f /usr/local/osmosis-test/script/pgsnapshot_schema_0.6.sql
+
+sudo osmosis --read-pbf /home/witalo/Documents/Maps/mapzen_new_york.osm.pbf --log-progress --write-pgsql database=mapzen_new_york user=postgres password=maps
+
+
+
+
+wget http://bretth.dev.openstreetmap.org/osmosis-build/osmosis-latest.tgz
+mkdir osmosis
+mv osmosis-latest.tgz osmosis
+cd osmosis
+tar xvfz osmosis-latest.tgz
+rm osmosis-latest.tgz
+chmod a+x bin/osmosis
+bin/osmosis
