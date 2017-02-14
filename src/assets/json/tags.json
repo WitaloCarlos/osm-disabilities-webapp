@@ -1,0 +1,483 @@
+[
+	
+	{
+		"label": "Cadeirantes - Com acesso",
+		"tag": "wheelchair",
+		"value": "yes",
+		"color": "#a3ff00", 
+		"desc": "Cadeirantes têm pleno acesso ao local anotado com essa tag.",
+		"target": "cadeirantes",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Cadeirantes - Com acesso parcial",
+		"tag":"wheelchair",
+		"value": "limited",
+		"color": "#e3ff00",
+		"desc": "Cadeirantes têm acesso parcial ao local anotado com essa tag.",
+		"target": "cadeirantes",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Cadeirantes - Sem acesso",
+		"tag":"wheelchair",
+		"value": "no",
+		"color": "#ff0000",
+		"desc": "Cadeirantes não têm acesso ao local anotado com essa tag.",
+		"target": "cadeirantes",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Cadeirantes - Sem acesso",
+		"tag":"wheelchair",
+		"value": "designated",
+		"color": "#2471A3",
+		"desc": "Local exclusivo para acesso de cadeirantes.",
+		"target": "cadeirantes",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Dispõe de Auto-falantes",
+		"tag":"speech_output:en",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se terminais de venda ou similares possuem suporte de auto-falantes para comunicação com pessoas, geralmente, cegas.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Não dispõe de Auto-falantes",
+		"tag":"speech_output:en",
+		"value": "no",
+		"color": "#ff0000",
+		"desc": "Descreve se terminais de venda ou similares não possuem suporte de auto-falantes para comunicação com pessoas, geralmente, cegas.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Dispõe de Comandos de Voz",
+		"tag":"speech_input:en",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se terminais de venda ou similares possuem suporte entrada de comando de voz e auto-falantes para comunicação com pessoas, geralmente, cegas.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Não dispõe de Auto-falantes",
+		"tag":"speech_input:en",
+		"value": "no",
+		"color": "#ff0000",
+		"desc": "Descreve se terminais de venda ou similares não possuem suporte entrada de comando de voz e auto-falantes para comunicação com pessoas, geralmente, cegas.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Dispõe de descrição tátil",
+		"tag":"tactile_writing:embossed_printed_letters:en",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se o local contém placa de descrição com texto em alto relevo legível através do tato.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Dispõe de descrição tátil",
+		"tag":"tactile_writing:engraved_printed_letters:en",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se o local contém placa de descrição com texto escupido com bordas legível através do tato.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Dispõe de descrição tátil",
+		"tag":"tactile_writing:braille:en",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se o local contém placa de descrição com texto em braille legível através do tato.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Dispõe de descrição tátil",
+		"tag":"tactile_writing:computer_braille:en",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se o local contém descrição através de computador com suporte à texto em braille.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Dispõe de descrição tátil",
+		"tag":"tactile_writing:fakoo:en",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se o local contém placa de descrição com texto em fakoo (versão do braille com 9 pontos, 3 a mais que o comum) legível através do tato.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Dispõe de descrição tátil",
+		"tag":"tactile_writing:moon:en",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se o local contém placa de descrição com texto em moon (alfabeto ocidental adaptado em alto relevo) legível através do tato.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Não dispõe de descrição tátil",
+		"tag":"tactile_writing:embossed_printed_letters:en",
+		"value": "no",
+		"color": "#a3ff00",
+		"desc": "Descreve se o local contém placa de descrição com texto em alto relevo legível através do tato.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Não dispõe de descrição tátil",
+		"tag":"tactile_writing:engraved_printed_letters:en",
+		"value": "no",
+		"color": "#a3ff00",
+		"desc": "Descreve se o local contém placa de descrição com texto escupido com bordas legível através do tato.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Não dispõe de descrição tátil",
+		"tag":"tactile_writing:braille:en",
+		"value": "no",
+		"color": "#a3ff00",
+		"desc": "Descreve se o local contém placa de descrição com texto em braille legível através do tato.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Não dispõe de descrição tátil",
+		"tag":"tactile_writing:computer_braille:en",
+		"value": "no",
+		"color": "#a3ff00",
+		"desc": "Descreve se o local contém descrição através de computador com suporte à texto em braille.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Não dispõe de descrição tátil",
+		"tag":"tactile_writing:fakoo:en",
+		"value": "no",
+		"color": "#a3ff00",
+		"desc": "Descreve se o local contém placa de descrição com texto em fakoo (versão do braille com 9 pontos, 3 a mais que o comum) legível através do tato.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Não dispõe de descrição tátil",
+		"tag":"tactile_writing:moon:en",
+		"value": "no",
+		"color": "#a3ff00",
+		"desc": "Descreve se o local contém placa de descrição com texto em moon (alfabeto ocidental adaptado em alto relevo) legível através do tato.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Informações sobre a área de um local.",
+		"tag":"information",
+		"value": "tactile_map",
+		"color": "#8b3c69",
+		"desc": "Modelo tátil de contruções (maquetes) para ser exploradas pelo tato.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Informações sobre a área de um local.",
+		"tag":"information",
+		"value": "tactile_model",
+		"color": "#edd2e8",
+		"desc": "Mapa que pode ser lido através do tato.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Descrição do ponto anotado",
+		"tag":"wheelchair:description",
+		"value": "texto",
+		"color": "#874e4c",
+		"desc": "Descreve o local anotado com informações relevantes para um cadeirante.",
+		"target": "cadeirantes",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Descrição do ponto anotado",
+		"tag":"blind:description",
+		"value": "texto",
+		"color": "#e2b091",
+		"desc": "Descreve o local anotado com informações relevantes para um cadeirante.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Descrição do ponto anotado",
+		"tag":"deaf:description",
+		"value": "texto",
+		"color": "#f7dfd4",
+		"desc": "Descreve o local anotado com informações relevantes para um cadeirante.",
+		"target": "surdos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Local com piso tátil",
+		"tag": "tactile_paving",
+		"value": "yes",
+		"color": "#a3ff00", 
+		"desc": "Local com piso tátil disponível.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Local sem piso tátil",
+		"tag":"tactile_paving",
+		"value": "no",
+		"color": "#ff0000",
+		"desc": "Local sem piso tátil disponível.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Local com piso tátil com cores em contraste",
+		"tag": "tactile_paving",
+		"value": "contrasted",
+		"color": "#25496b", 
+		"desc": "Local com piso tátil disponível e a cor do piso é pelo menos 70% mais clara em contraste com a cor do piso (piso tátil branco se o chão é preto).",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Local com piso tátil",
+		"tag": "tactile_paving",
+		"value": "primitive",
+		"color": "#d3e4f8", 
+		"desc": "Local onde existe algum tipo de orientação tátil mas não com piso adequado.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Local com piso tátil",
+		"tag": "tactile_paving",
+		"value": "incorrect",
+		"color": "#e3ff00", 
+		"desc": "Local com piso tátil utilizado de forma incorreta. Por Ex: Um caminho com piso tátil que não leva a lugar algum.",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Local dispõe de acesso com rampa.",
+		"tag":"ramp",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se o acesso à um prédio ou a uma calçada possue uma rampa qualquer.",
+		"target": "cadeirantes",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Local não dispõe de acesso com rampa.",
+		"tag":"ramp",
+		"value": "no",
+		"color": "#ff0000",
+		"desc": "Descreve se o acesso à um prédio ou a uma calçada possue uma rampa qualquer.",
+		"target": "cadeirantes",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Local dispõe de acesso com rampa.",
+		"tag":"ramp:wheelchair",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se o acesso à um prédio ou a uma calçada possue uma rampa específica para cadeirantes.",
+		"target": "cadeirantes",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Local não dispõe de acesso com rampa.",
+		"tag":"ramp:wheelchair",
+		"value": "no",
+		"color": "#ff0000",
+		"desc": "Descreve se o acesso à um prédio ou a uma calçada possue uma rampa específica para cadeirantes.",
+		"target": "cadeirantes",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Acesso à uma calçada",
+		"tag":"kerb",
+		"value": "lowered",
+		"color": "#8b3c69",
+		"desc": "Corte no meio fio de calçadas ou cruzamentos para acesso à calçada. Contém uma pequena rampa para acesso ao piso da rua.",
+		"target": "cadeirantes",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Acesso à uma calçada",
+		"tag":"kerb",
+		"value": "flush",
+		"color": "#edd2e8",
+		"desc": "Corte no meio fio de calçadas ou cruzamentos para acesso à calçada. O acesso é rente ao piso da rua.",
+		"target": "cadeirantes",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Vibração no solo em uma travessia",
+		"tag":"traffic_signals:floor_vibration",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se uma travessia tem dispositivo de vibração no solo para indicar se é possível atravessar a via. Usado em conjunto com a tag de tipo de travessia 'crossing=toucan/pelican/pegasus.'",
+		"target": "surdos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Sem vibração no solo em uma travessia",
+		"tag":"traffic_signals:floor_vibration",
+		"value": "no",
+		"color": "#ff0000",
+		"desc": "Descreve se uma travessia não tem dispositivo de vibração no solo para indicar se é possível atravessar a via. Usado em conjunto com a tag de tipo de travessia 'crossing=toucan/pelican/pegasus.'",
+		"target": "surdos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Vibração no solo em uma travessia",
+		"tag":"traffic_signals:vibration",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se uma travessia tem dispositivo de vibração para indicar quando a travessia é permitida. Usado em conjunto com a tag de tipo de travessia 'crossing=toucan/pelican/pegasus.'",
+		"target": "surdos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Sem vibração no solo em uma travessia",
+		"tag":"traffic_signals:vibration",
+		"value": "no",
+		"color": "#ff0000",
+		"desc": "Descreve se uma travessia não tem dispositivo de vibração para indicar quando a travessia é permitida. Usado em conjunto com a tag de tipo de travessia 'crossing=toucan/pelican/pegasus.'",
+		"target": "surdos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Contém seta para indicar o sentido da travessia",
+		"tag":"traffic_signals:arrow",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se uma travessia tem um dispositivo com uma seta em alto relevo para indicar o sentido da travessia da via. Usado em conjunto com a tag de tipo de travessia 'crossing=toucan/pelican/pegasus.'",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Não contém seta para indicar o sentido da travessia",
+		"tag":"traffic_signals:arrow",
+		"value": "no",
+		"color": "#ff0000",
+		"desc": "Descreve se uma travessia não tem um dispositivo com uma seta em alto relevo para indicar o sentido da travessia da via. Usado em conjunto com a tag de tipo de travessia 'crossing=toucan/pelican/pegasus.'",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Contém um mapa tátil na travessia",
+		"tag":"traffic_signals:minimap",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se uma travessia tem uma mapa tátil para indicar o traçado da travessia para cegos. Usado em conjunto com a tag de tipo de travessia 'crossing=toucan/pelican/pegasus.'",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Não contém um mapa tátil na travessia",
+		"tag":"traffic_signals:minimap",
+		"value": "no",
+		"color": "#ff0000",
+		"desc": "Descreve se uma travessia não tem uma mapa tátil para indicar o traçado da travessia para cegos. Usado em conjunto com a tag de tipo de travessia 'crossing=toucan/pelican/pegasus.'",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Contém sinal sonoro na travessia",
+		"tag":"traffic_signals:sound",
+		"value": "yes",
+		"color": "#a3ff00",
+		"desc": "Descreve se uma travessia tem um sinal sonoro para indicar aonde fica e quando é permitida a passagem. Usado em conjunto com a tag de tipo de travessia 'crossing=toucan/pelican/pegasus.'",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Não contém sinal sonoro na travessia",
+		"tag":"traffic_signals:sound",
+		"value": "no",
+		"color": "#ff0000",
+		"desc": "Descreve se uma travessia não tem um sinal sonoro para indicar aonde fica e quando é permitida a passagem. Usado em conjunto com a tag de tipo de travessia 'crossing=toucan/pelican/pegasus.'",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Sinal sonoro na travessia",
+		"tag": "traffic_signals:sound",
+		"value": "locate",
+		"color": "#25496b", 
+		"desc": "Descreve se uma travessia tem um sinal sonoro para indicar aonde fica a travessia mas não para indicar quando é permitida a passagem. Usado em conjunto com a tag de tipo de travessia 'crossing=toucan/pelican/pegasus.'",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	},
+	{
+		"label": "Sinal sonoro na travessia",
+		"tag": "traffic_signals:sound",
+		"value": "walk",
+		"color": "#d3e4f8", 
+		"desc": "Descreve se uma travessia não tem um sinal sonoro para indicar aonde fica a travessia mas indica quando é permitida a passagem. Usado em conjunto com a tag de tipo de travessia 'crossing=toucan/pelican/pegasus.'",
+		"target": "cegos",
+		"annotations_count": null, "users_count":null,
+		"users": []
+	}
+]

@@ -3,9 +3,12 @@
 
     angular.module('app',
         ['ui.router',
-            'app.home',
-            'homeMapCtrl',
-            'homeMapServ'])
+            'app.map',
+            'app.tag',
+            'mapCtrl',
+            'tagCtrl',
+            'mapServ',
+            'tagServ'])
         .config(['$stateProvider', '$urlRouterProvider', stateConfig]);
 
     function stateConfig($stateProvider, $urlRouterProvider) {
@@ -13,6 +16,14 @@
             .state('app', {
                 url: '/home',
                 templateUrl: 'app/home/home.html'
+            })
+            .state('tag', {
+                url: '/tags/{api}',
+                templateUrl: 'app/tag/tag.html'
+            })
+            .state('map', {
+                url: '/map/{api}/{tag}/{value}',
+                templateUrl: 'app/map/map.html'
             });
 
         $urlRouterProvider.when('', '/home');

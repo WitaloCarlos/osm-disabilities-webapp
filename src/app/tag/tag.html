@@ -1,0 +1,50 @@
+<html ng-app="app.tag">
+<main>
+
+    <div ng-controller="tagController">
+
+        <h1>Tags de Acessibilidade do <a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a></h1> 
+
+        <p><small> Abaixo segue a lista de Tags de Acessibilidade anotadas no OpenStreetMap disponíveis na cidade de <strong>Londres, UK</strong> com um atalho para vizualização das mesmas plotadas no mapa.</small></p>
+
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="col-md-2 text-center">TAG</th>
+                        <th class="col-md-2 text-center">VALOR</th>
+                        <th class="col-md-2 text-center">DESCRIÇÃO</th>
+                        <th class="col-md-2 text-center">PÚBLICO
+                            <br/>ALVO
+                        </th>
+                        <th class="col-md-2 text-center">QUANT.
+                            <br/>ANOTAÇÕES
+                        </th>
+                        <th class="col-md-2 text-center">QUANT.
+                            <br/>USUÁRIOS
+                        </th>
+                        <th class="col-md-2 text-center">VER</th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat="tag in tags">
+                    <tr>
+                        <td class="col-md-2 text-center">{{tag.tag}}</td>
+                        <td class="col-md-2 text-center">{{tag.value}}</td>
+                        <td class="col-md-3 text-center">{{tag.desc}}</td>
+                        <td class="col-md-2 text-center">{{tag.target}}</td>
+                        <td class="col-md-1 text-center">{{tag.annotations_count |checkValue: tag.annotations_count}}</td>
+                        <td class="col-md-1 text-center">{{tag.users_count| checkValue: tag.users_count}}</td>
+                        <td class="col-md-1 text-center"><a ui-sref="map({api: apiPath, tag: tag.tag, value: tag.value})" href="" target="_blank"> mapa <span class="glyphicon glyphicon-share-alt
+" aria-hidden="true"></a></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+</main>
+
+</html>
