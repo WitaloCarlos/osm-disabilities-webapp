@@ -7,7 +7,7 @@
     MapService.$inject = (['$http']);
 
     function MapService($http) {
-        var server_url = 'http://localhost:9200';
+        var server_url = 'http://web.cloud.lsd.ufcg.edu.br:41047/osm-tags';
         return {
             getByTag: function (tag, value, apiPath,successCallback, errorCallback) {
                 console.log('req: '+ server_url + '/api/'+ apiPath +'/' + tag + '/' + value);

@@ -11,7 +11,7 @@
         return {
             getTags: function (successCallback, errorCallback) {
                 
-                return $http.get('/src/assets/json/tags.json')
+                return $http.get('../src/assets/json/tags.json')
                     .then(successCallback)
                     .catch(errorCallback);
             }

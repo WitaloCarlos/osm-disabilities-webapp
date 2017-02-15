@@ -16,7 +16,7 @@
         });
 
         self.boundarySrc = new ol.source.Vector({
-            url: '/src/assets/json/londres.geojson',
+            url: '../src/assets/json/londres.geojson',
             format: new ol.format.GeoJSON()
 
         });
