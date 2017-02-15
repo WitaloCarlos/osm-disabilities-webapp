@@ -4,8 +4,9 @@
     angular
         .module('tagCtrl', [])
         .controller('tagController', TagController)
+        .directive('tagCard', function(){return tagCard})
         .filter('checkValue', function(){return checkValue});
-       
+
     TagController.$inject = ['$scope', '$http', '$stateParams', 'tagService', 'mapService'];
 
 
@@ -36,7 +37,7 @@
                  return tag.annotations_count;
             }
 
-            
+
 
         }
 
@@ -48,6 +49,19 @@
         } else {
             return value;
         }
+    }
+
+    function tagCard(){
+      var directive = {
+
+          scope: {
+              tag: '='
+          }
+
+      }
+
+      return directive;
+
     }
 
 

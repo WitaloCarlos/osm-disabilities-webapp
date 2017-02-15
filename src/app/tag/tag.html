@@ -7,6 +7,11 @@
 
         <p><small> Abaixo segue a lista de Tags de Acessibilidade anotadas no OpenStreetMap disponíveis na cidade de <strong>Londres, UK</strong> com um atalho para vizualização das mesmas plotadas no mapa.</small></p>
 
+
+        <div ng-repeat="tag in tags">
+            <tag-card tag="tag"></tag-card>
+        </div>
+
         <div class="table-responsive">
             <table class="table table-bordered">
                 <thead>
