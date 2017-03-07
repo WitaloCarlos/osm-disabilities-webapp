@@ -7,8 +7,10 @@
             'app.tag',
             'mapCtrl',
             'tagCtrl',
+            'resumeCtrl',
             'mapServ',
-            'tagServ'])
+            'tagServ',
+            'resumeServ'])
         .config(['$stateProvider', '$urlRouterProvider', stateConfig]);
 
     function stateConfig($stateProvider, $urlRouterProvider) {
@@ -24,6 +26,10 @@
             .state('map', {
                 url: '/map/{api}/{tag}/{value}',
                 templateUrl: 'app/map/map.html'
+            })
+            .state('resume', {
+                url: '/resume',
+                templateUrl: 'app/resume/resume.html'
             });
 
         $urlRouterProvider.when('', '/home');

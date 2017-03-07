@@ -1,50 +1,161 @@
 <html ng-app="app.home">
 <main>
-
-    <h1 class="text-center">Extração de anotações de pontos de acessibilidade em Londres - Inglaterra a partir do OpenStreetMap</h1>
-
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h2 class="panel-title text-center">Contexto</h2>
-        </div>
-        <p> TODO </p>
+    <div class="page-header">
+        <h1 class="text-center">Extração de anotações de pontos de acessibilidade para cadeirantes em Londres, Reino Unido a partir do OpenStreetMap</h1>
     </div>
 
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h2 class="panel-title text-center">OpenStreetMaps</h2>
+    <h2>Introdução</h2>
+
+    <p class="text-justify">Este trabalho teve como objetivo obter uma visão geral da distribuição de pontos de acessibilidade localizados na cidade
+        de Londres, Reino Unido anotados em elementos dos tipos Nodes ou Ways na base de dados do OpenStreetMap Project.
+        Além da atuação dos usuários voluntários na anotação desses dados.</p>
+
+    <h2>OpenStreetMap</h2>
+
+    <p class="text-justify">O OpenStreetMap Project (OSM), fundado em 2004 no University College London, é um projeto de mapas abertos e colaborativos
+        mantido pela comunidade de voluntários e com suporte jurídico e de infraestrutura da OSM Foundation. O projeto conta
+        atualmente com mais de dois milhões de voluntários que atuam no mapeamento e anotação de pontos de interesse em ruas,
+        estradas, estabelecimentos e etc.</p>
+
+    <h3>Inserção dos dados</h3>
+
+    <p class="text-justify">As anotações são adicionadas aos mapas do OSM pelos voluntários através de um software editor. Estão disponíveis software
+        editores web, nos quais as edições são feitas on-line, no browser diretamente na plataforma do OSM (Ex.: iD e Potlach
+        2) e desktop, nos quais as edições são feitas off-line em uma porção do mapa descarregada do OSM e, após finalizar
+        as edições, reenviada com as modificações ao OSM (Ex.: JOSM e Merkaator).</p>
+
+    <img class="img-responsive" src="./assets/image/id_editing.png" alt="Tela de edição do iD Editor">
+
+    <p class="text-justify">As anotações são feitas utilizando três tipos de elementos:</p>
+
+    <div class="media">
+        <div class="media-left">
+            <img class="media-object" src="./assets/image/nodes.png">
         </div>
-        <p> TODO </p>
+        <div>
+            <p class="media-heading"><strong>Nó (Node)</strong></p>
+            <p class="text-justify">Ponto individual utilizado para anotar locais específicos como uma estátua ou um telefone público, por exemplo.</p>
+        </div>
+
+
+
+        <div class="media-left">
+            <img class="media-object" src="./assets/image/way.png">
+        </div>
+        <div>
+            <p class="media-heading"><strong>Caminho (Way)</strong></p>
+            <p class="text-justify">Conjunto de pontos conectados em uma linha. Utilizado para anotar ruas, rios, estradas e etc. Quando a anotação
+                de um caminho termina no mesmo ponto onde começou, a anotação é denominada como Closed Way e é utilizada
+                para anotar áreas como parques, lagos e etc.</p>
+        </div>
+
+
+
+        <div class="media-left">
+            <img class="media-object" src="./assets/image/relations.png">
+        </div>
+        <div>
+            <p class="media-heading"><strong>Relação (Relation)</strong></p>
+            <p class="text-justify">Quando existe interseção entre caminhos e esses caminhos são relacionados, a anotação do elemento relação é indicada
+                para descrever o relacionamento entre os caminhos. Um exemplo de utilização desse elemento é a anotação de
+                autovias que são compostas por um conjunto de vias.</p>
+        </div>
     </div>
 
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h2 class="panel-title text-center">Coleta dos dados</h2>
-        </div>
-        <p> TODO </p>
-    </div>
+    <img class="img-responsive" src="./assets/image/elements.png" alt="Elementos do OSM">
 
-    <div class="panel panel-primary">
-        <div class="panel-heading text-center">
-            <h2 class="panel-title">Preparação dos dados</h2>
-        </div>
-        <p> TODO </p>
-    </div>
+    <p class="text-justify">Um elemento anotado contém sua latitude e longitude, o identificador do usuário que fez a anotação, a versão da anotação,
+        o id do conjunto de modificações realizado pelo usuário e o conjunto de tags que ajudam na descrição do ponto anotado.</p>
 
-    <div class="panel panel-primary">
-        <div class="panel-heading text-center">
-            <h2 class="panel-title">Reutilização dos dados</h2>
-        </div>
-        <p> TODO </p>
-    </div>
+    <h3>Tags</h3>
+
+    <p class="text-justify">As tags representam características de um nó, caminho ou relação anotado no OSM. As tags são usadas para atribuir detalhes
+        importantes do elemento anotado como por exemplo: o tipo de estabelecimento anotado, horário de funcionamento, se
+        o local dispõe de banheiros, se uma via dispõe de uma travessia, se o acesso é público ou restrito e etc. </p>
+    <p class="text-justify"> As tags são agrupadas em diversas categorias, porém o uso de uma tag pode variar dependendo do país onde esteja sendo
+        anotado, por isso o OSM dispõe de guias de boas práticas de tagueamento em diversos países. São exemplo de categorias
+        de tags: Highways, Buildings, Amenities, Disabilities. </p>
+
+    <h2>Coleta dos Dados</h2>
+
+    <h3>Base de dados do OSM - OSM Extracts</h3>
+
+    <p class="text-justify">O OSM publica semanalmente na página Planet OSM uma cópia integral de sua base de dados. Cerca de 739 GB de dados são
+        publicados nos formatos compactados OSM XML (cerca de 55 GB) e PBF (cerca de 33 GB). Existe também a opção de descarregar
+        fragmentos da base do OSM através de serviços de terceiros como o GeoFabrik e o Mapzen, que disponibilizam esses
+        dados em volumes bem menores e separados em países, regiões ou estados.</p>
+    <p class="text-justify"> Os dados utilizados neste trabalho são da região da Grande Londres, região da capital do Reino Unido, e foram descarregados
+        do OSM no dia 27 de Janeiro de 2017, sem atualizações posteriores, em formato PBF, via serviço Mapzen Metro Extracts.
+        Londres foi a cidade escolhida para esse trabalho por ser uma cidade global, uma das principais cidades da Europa,
+        importante centro econômico e cultural e por ser a cidade de origem do OpenStreetMap Project.</p>
+
+    <h3>London Datastore</h3>
+
+    <p class="text-justify">Também foram utilizados dados do Greater London Authority (GLA) referentes aos limites geográficos dos bairros de Londres.
+        Os dados foram extraídos do censo populacional londrino realizado no ano de 2011. O GLA, entidade responsável pela
+        administração da Grande Londres, disponibiliza seus dados abertos no portal London Datastore.</p>
+
+    <h2>Preparação dos Dados</h2>
+
+    <p class="text-justify">Os dados descarregados foram carregados em uma base de dados PostgresSQL com PostGIS. A extração dos dados do arquivo
+        PBF para inserção na base de dados foi feita pela ferramenta Osmosis.</p>
+    <p class="text-justify">O Osmosis é uma ferramenta de linha de comando disponível para Linux e Mac OS, a versão para Windows não é estável, que
+        é utilizada para processar dados do OSM, seja esse conjunto de dados do formato OSM XML ou PBF. Com o Osmosis é possível
+        extrair ou carregar dados em uma base de dados OSM, comparar duas bases de dados, gerar conjunto de modificações
+        após uma correção, extrair uma porção dos dados baseados em algum critério, como a localização ou uma tag anotada.</p>
+    <p class="text-justify">Os dados foram carregados na base de dados utilizando o esquema Osmosis/pgsnapshot que é uma versão simplificada do esquema
+        da base original do OSM. A escolha pelo Osmosis/pgsnapshot se concretizou após comparações com o esquema osm2pgsql,
+        que é bem semelhante, porém não traz outras informações dos usuários, além do ID.</p>
+    <br/> TODO: ADICIONAR IMAGENS DOS ESQUEMAS
+    <p class="text-justify">Após inserir os dados do OSM, foi realizada uma modificação no esquema da base de dados, adicionando uma nova tabela
+        para inserção dos dados dos bairros de Londres. Os dados dos bairros de londrinos foram inseridos na base de dados
+        com o auxílio da ferramenta de linha de comando shp2pgsql.
+    </p>
+
+    <p class="text-justify">Foram criadas algumas funções para auxiliar na extração dos nós e caminhos de interesse para o trabalho.</p>
+
+    <h3>Passo-a-passo</h3>
+    <dl>
+        <dt> 1º - Criação da base de dados </dt>
+        <dd>
+            <pre>sudo -u postgres createdb --encoding=UTF8 --owner=postgres mapzen_london</pre>
+        </dd>
+
+        <dt> 2º - Criação das extensões PostGIS e HStore </dt>
+        <dd>
+            <pre>sudo psql --username=postgres --dbname=mapzen_london -c "CREATE EXTENSION IF NOT EXISTS postgis; CREATE EXTENSION IF NOT EXISTS hstore"</pre>
+        </dd>
+
+        <dt> 3º - Criação do esquema PGsnapshot </dt>
+        <dd>
+            <pre>sudo psql -U postgres -W -d mapzen_london -f /PATH TO OSMOSIS FILES/script/pgsnapshot_schema_0.6.sql</pre>
+        </dd>
+
+        <dt> 4° - Carga dos dados do OSM na base de dados via Osmosis </dt>
+        <dd>
+            <pre>sudo osmosis --read-pbf mapzen_london.osm.pbf --log-progress --write-pgsql database=mapzen_london user=postgres password=pass</pre>
+        </dd>
+
+        <dt> 5º - Carga dos dados do London Dataset na base de dados via shp2pgsql </dt>
+        <dd>
+            <pre>shp2pgsql -s 27700 london.shp  public.boroughs | psql -h localhost -p 5432 -d mapzen_london -U postgres -W</pre>
+        </dd>
+
+        <dt> 6º - Criação das funções auxiliares</dt>
+        <dd>
+            <pre>sudo psql -U postgres -W -d mapzen_london -f /path to functions file/osm_extract_functions.sql</pre>
+        </dd>
+    </dl>
+
+    <h2>Extração dos Dados</h2>
+
+    <h2>Reuso dos Dados</h2>
 
     <div class="panel panel-default ">
-  <div class="panel-body">
-    <strong>Witalo Carlos Xavier Albuquerque</strong><br/>
-    Universidade Federal de Campina Grande<br/>
-    Campina Grande-PB
-  </div>
-</div>
+        <div class="panel-body">
+            <strong>Witalo Carlos Xavier Albuquerque</strong><br/> Universidade Federal de Campina Grande<br/> Campina Grande-PB
+        </div>
+    </div>
 
 </main>
 

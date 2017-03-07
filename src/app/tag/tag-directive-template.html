@@ -1,6 +1,68 @@
-<div class="caption">
+<div class="row">
+  <div class="panel panel-default">
 
-  <p3>{{tag.tag}}</p3>
+    <div class="panel-heading text-left">
+      <div class="row">
+        <div class="col-md-4">
+          <strong>Tag:</strong> <br/>
+          <h3 class="tag-h3">{{tag.tag}}</h3>
+        </div>
+        <div class="col-md-2">
+          <strong>Valor:</strong> <br/>
+          <h3 class="tag-h3">{{tag.value}}</h3>
+        </div>
+        <div class="col-md-6 text-right">
+          <strong>Público Alvo:</strong> <br/>
+          <h3 class="tag-h3">{{tag.target}}</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-body">
+
+      <strong>Descrição:</strong> <br/>
+      <p>{{tag.desc}}</p>
+
+      <div class="row">
+
+        <div class="col-md-2 text-left">
+          <strong>Fonte: </strong> <br/>
+          <a href="{{tag.wiki}}" target="_blank">
+            <button class="btn btn-success">
+            OSM Wiki <span class="fa fa-external-link"></span>
+            </button>
+          </a>
+        </div>
+
+        <div class="col-md-6 text-left">
+          <div class="row">
+            <div class="col-md-6">
+              <strong>Quant. Anotações: </strong> <br/> {{tag.annotations_count}}
+            </div>
+            <div class="col-md-6">
+              <strong>Quant. Contribuidores: </strong> <br/> {{tag.users_count}}
+            </div>
+          </div>
 
 
+        </div>
+
+        <div class="col-md-4 text-right">
+          <strong>Vizualizar tags no mapa:</strong> <br/>
+          <a ui-sref="map({api: 'nodes', tag: tag.tag, value: tag.value})" href="" target="_blank">
+            <button class="btn btn-info">
+               <span class="fa fa-map-pin"></span> Node
+            </button>
+          </a>
+
+          <a ui-sref="map({api: 'ways', tag: tag.tag, value: tag.value})" href="" target="_blank">
+            <button class="btn btn-info">
+            <span class="fa fa-road"></span> Way
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>

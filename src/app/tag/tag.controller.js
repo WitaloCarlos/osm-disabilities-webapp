@@ -4,8 +4,8 @@
     angular
         .module('tagCtrl', [])
         .controller('tagController', TagController)
-        .directive('tagCard', function(){return tagCard})
-        .filter('checkValue', function(){return checkValue});
+        .directive('tagCard', tagCard)
+        .filter('checkValue', function () { return checkValue });
 
     TagController.$inject = ['$scope', '$http', '$stateParams', 'tagService', 'mapService'];
 
@@ -22,19 +22,19 @@
             console.log(error);
         })
 
-        self.annotationsCount = function (key, value,tag) {
+        self.annotationsCount = function (key, value, tag) {
 
-            if (!tag.annotations_count){
-                mapService.getCountByTag(key, value, function(response){
-                var result = response.data;
-                tag.annotations_count = result.count;
-                return tag.annotations_count;
-            }, function(error){
-                console.log(error);
-                return null;
-            })
+            if (!tag.annotations_count) {
+                mapService.getCountByTag(key, value, function (response) {
+                    var result = response.data;
+                    tag.annotations_count = result.count;
+                    return tag.annotations_count;
+                }, function (error) {
+                    console.log(error);
+                    return null;
+                })
             } else {
-                 return tag.annotations_count;
+                return tag.annotations_count;
             }
 
 
@@ -43,24 +43,25 @@
 
     }
 
-    function checkValue(value){
-        if (!value){
+    function checkValue(value) {
+        if (!value) {
             return 'N/D'
         } else {
             return value;
         }
     }
 
-    function tagCard(){
-      var directive = {
+    function tagCard() {
+        var directive = {
+            restrict: 'E',
+            templateUrl: '/src/app/tag/tag-directive-template.html',
+            scope: {
+                tag: '='
+            }
 
-          scope: {
-              tag: '='
-          }
+        }
 
-      }
-
-      return directive;
+        return directive;
 
     }
 

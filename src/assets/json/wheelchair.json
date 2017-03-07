@@ -1,0 +1,308 @@
+[
+   {
+    "borough": "General",
+    "general": 2311760,
+    "wheelchair_yes": 2341,
+    "wheelchair_no": 1119,
+    "wheelchair_limited": 511,
+    "wheelchair_designated": 2,
+    "wheelchair_description": 3
+  },
+  {
+    "borough": "Barking and Dagenham",
+    "general": 12316,
+    "wheelchair_yes": 6,
+    "wheelchair_no": 2,
+    "wheelchair_limited": 0,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Barnet",
+    "general": 34884,
+    "wheelchair_yes": 59,
+    "wheelchair_no": 9,
+    "wheelchair_limited": 9,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Bexley",
+    "general": 20442,
+    "wheelchair_yes": 12,
+    "wheelchair_no": 0,
+    "wheelchair_limited": 5,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Brent",
+    "general": 42202,
+    "wheelchair_yes": 23,
+    "wheelchair_no": 19,
+    "wheelchair_limited": 2,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Bromley",
+    "general": 36812,
+    "wheelchair_yes": 53,
+    "wheelchair_no": 4,
+    "wheelchair_limited": 3,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Camden",
+    "general": 64444,
+    "wheelchair_yes": 319,
+    "wheelchair_no": 248,
+    "wheelchair_limited": 75,
+    "wheelchair_designated": 2,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "City of London",
+    "general": 25760,
+    "wheelchair_yes": 61,
+    "wheelchair_no": 41,
+    "wheelchair_limited": 8,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 1
+  },
+  {
+    "borough": "Croydon",
+    "general": 37338,
+    "wheelchair_yes": 70,
+    "wheelchair_no": 9,
+    "wheelchair_limited": 13,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Ealing",
+    "general": 42830,
+    "wheelchair_yes": 48,
+    "wheelchair_no": 28,
+    "wheelchair_limited": 3,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Enfield",
+    "general": 55444,
+    "wheelchair_yes": 16,
+    "wheelchair_no": 4,
+    "wheelchair_limited": 2,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Greenwich",
+    "general": 29508,
+    "wheelchair_yes": 66,
+    "wheelchair_no": 5,
+    "wheelchair_limited": 2,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Hackney",
+    "general": 40882,
+    "wheelchair_yes": 58,
+    "wheelchair_no": 39,
+    "wheelchair_limited": 19,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Hammersmith and Fulham",
+    "general": 25320,
+    "wheelchair_yes": 38,
+    "wheelchair_no": 10,
+    "wheelchair_limited": 9,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Haringey",
+    "general": 31974,
+    "wheelchair_yes": 44,
+    "wheelchair_no": 8,
+    "wheelchair_limited": 8,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Harrow",
+    "general": 27872,
+    "wheelchair_yes": 84,
+    "wheelchair_no": 24,
+    "wheelchair_limited": 18,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Havering",
+    "general": 23140,
+    "wheelchair_yes": 6,
+    "wheelchair_no": 2,
+    "wheelchair_limited": 0,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Hillingdon",
+    "general": 29822,
+    "wheelchair_yes": 33,
+    "wheelchair_no": 11,
+    "wheelchair_limited": 2,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Hounslow",
+    "general": 42558,
+    "wheelchair_yes": 9,
+    "wheelchair_no": 6,
+    "wheelchair_limited": 2,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Islington",
+    "general": 57760,
+    "wheelchair_yes": 98,
+    "wheelchair_no": 65,
+    "wheelchair_limited": 22,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Kensington and Chelsea",
+    "general": 28512,
+    "wheelchair_yes": 44,
+    "wheelchair_no": 47,
+    "wheelchair_limited": 13,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 1
+  },
+  {
+    "borough": "Kingston upon Thames",
+    "general": 16050,
+    "wheelchair_yes": 30,
+    "wheelchair_no": 3,
+    "wheelchair_limited": 3,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Lambeth",
+    "general": 49404,
+    "wheelchair_yes": 111,
+    "wheelchair_no": 56,
+    "wheelchair_limited": 23,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Lewisham",
+    "general": 28622,
+    "wheelchair_yes": 55,
+    "wheelchair_no": 12,
+    "wheelchair_limited": 8,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Merton",
+    "general": 22200,
+    "wheelchair_yes": 22,
+    "wheelchair_no": 9,
+    "wheelchair_limited": 7,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Newham",
+    "general": 35980,
+    "wheelchair_yes": 82,
+    "wheelchair_no": 7,
+    "wheelchair_limited": 6,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Redbridge",
+    "general": 24836,
+    "wheelchair_yes": 14,
+    "wheelchair_no": 2,
+    "wheelchair_limited": 1,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Richmond upon Thames",
+    "general": 41332,
+    "wheelchair_yes": 39,
+    "wheelchair_no": 5,
+    "wheelchair_limited": 4,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Southwark",
+    "general": 685530,
+    "wheelchair_yes": 65,
+    "wheelchair_no": 23,
+    "wheelchair_limited": 17,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Sutton",
+    "general": 32490,
+    "wheelchair_yes": 5,
+    "wheelchair_no": 1,
+    "wheelchair_limited": 0,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Tower Hamlets",
+    "general": 48538,
+    "wheelchair_yes": 72,
+    "wheelchair_no": 25,
+    "wheelchair_limited": 12,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Waltham Forest",
+    "general": 80970,
+    "wheelchair_yes": 15,
+    "wheelchair_no": 4,
+    "wheelchair_limited": 2,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Wandsworth",
+    "general": 42564,
+    "wheelchair_yes": 35,
+    "wheelchair_no": 7,
+    "wheelchair_limited": 4,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 0
+  },
+  {
+    "borough": "Westminster",
+    "general": 115438,
+    "wheelchair_yes": 389,
+    "wheelchair_no": 315,
+    "wheelchair_limited": 132,
+    "wheelchair_designated": 0,
+    "wheelchair_description": 1
+  }
+]

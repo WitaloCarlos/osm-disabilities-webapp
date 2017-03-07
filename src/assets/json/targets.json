@@ -1,0 +1,8 @@
+{
+
+  "cols": [{"id":"target", "label": "Público Alvo", "type":"string"}, {"id":"quant", "label": "Quantidade", "type":"number"}],
+  "rows": [{"c":[{"v":"Surdos"},{"v":5}]},
+  {"c":[{"v":"Cegos"},{"v":32}]},
+  {"c":[{"v":"Cadeirantes"},{"v":11}]}]
+
+}
