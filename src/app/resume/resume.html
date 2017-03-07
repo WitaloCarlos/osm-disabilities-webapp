@@ -3,30 +3,62 @@
 
     <div ng-controller="resumeController">
         
+       <h2><p>Gráficos</p></h2>
+
         <div class="row">
             <div class="col-md-12">
 
                  <div class="row">
                     <div class="col-md-6"><div id="general_v_disabilities_chart"></div></div>
-                    <div class="col-md-6"><div id="tags_count_chart"></div></div></div>
-                </div>
-
-                <div class="row">
                     <div class="col-md-6"> <div id="targets_chart"></div></div>
-                    <div class="col-md-6"><div id="tags_v_annotations_chart"></div></div>
                 </div>
 
                 <div class="row">
-                    
+                    <div class="col-md-6"><div id="tags_count_chart"></div></div>
+                    <div class="col-md-6"><div id="users_v_annotations"></div></div></div>
+                </div>
+
+                <div class="row">
+                     <div class="col-md-6"><div id="tags_v_annotations_chart"></div></div>
+                    <div class="col-md-6"><div id="wheelchair_chart"></div>
                 </div>
 
                  <div class="row">
                     
                 </div>
-
-                 
-                
             </div>
+
+            <h2><p>Tags de acesso a Cadeirantes por bairro</p></h2>
+
+            <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="col-md-2 text-center">Bairro</th>
+                        <th class="col-md-2 text-center">Tags em Geral</th>
+                        <th class="col-md-2 text-center">Cadeirantes<br/>Sim</th>
+                        <th class="col-md-2 text-center">Cadeirantes<br/>Não</th>
+                        <th class="col-md-2 text-center">Cadeirantes<br/>Limitado</th>
+                        <th class="col-md-2 text-center">Cadeirantes<br/>Designado</th>
+                        <th class="col-md-2 text-center">Cadeirantes<br/>Descrição</th>
+                        </tr>
+                </thead>
+                <tbody ng-repeat="borough in wheelchair_borough | orderBy: '-wheelchair_yes'">
+                    <tr>
+                        <td class="col-md-2 text-center">{{borough.borough}}</td>
+                        <td class="col-md-2 text-center">{{borough.general}}</td>
+                        <td class="col-md-3 text-center">{{borough.wheelchair_yes}}</td>
+                        <td class="col-md-2 text-center">{{borough.wheelchair_no}}</td>
+                        <td class="col-md-1 text-center">{{borough.wheelchair_limited}}</td>
+                        <td class="col-md-1 text-center">{{borough.wheelchair_designated}}</td>
+                        <td class="col-md-1 text-center">{{borough.wheelchair_description}}</td>
+                    
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         </div>        
     </div>
 

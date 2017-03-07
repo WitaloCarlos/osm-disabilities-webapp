@@ -1,53 +1,198 @@
 [
   {
-    "all_tags": 5646,
-    "wheelchair_yes": 315,
-    "wheelchair_no": 154,
-    "wheelchair_limited": 112,
-    "wheelchair_designated": 1,
-    "speech_output_yes": 1,
-    "speech_output_no": 0,
-    "speech_input_yes": 0,
-    "speech_input_no": 0,
-    "tactile_writing_embossed_yes": 0,
-    "tactile_writing_embossed_no": 0,
-    "tactile_writing_engraved_yes": 0,
-    "tactile_writing_engraved_no": 0,
-    "tactile_writing_braille_yes": 0,
-    "tactile_writing_braille_no": 0,
-    "tactile_writing_computer_braille_yes": 0,
-    "tactile_writing_computer_braille_no": 0,
-    "tactile_writing_fakoo_yes": 0,
-    "tactile_writing_fakoo_no": 0,
-    "tactile_writing_moon_yes": 0,
-    "tactile_writing_moon_no": 0,
-    "information_tactile_map": 0,
-    "information_tactile_model": 0,
-    "wheelchair_desc": 1,
-    "deaf_desc": 1,
-    "blind_desc": 0,
-    "tactile_paving_yes": 42,
-    "tactile_paving_no": 22,
-    "tactile_paving_contrasted": 0,
-    "tactile_paving_primitive": 0,
-    "tactile_paving_incorrect": 1,
-    "ramp_yes": 0,
-    "ramp_no": 0,
-    "ramp_wheelchair_yes": 0,
-    "ramp_wheelchair_no": 0,
-    "kerb_lowered": 26,
-    "kerb_flush": 4,
-    "traffic_signals_floor_vibration_yes": 0,
-    "traffic_signals_floor_vibration_no": 0,
-    "traffic_signals_vibration_yes": 3,
-    "traffic_signals_vibration_no": 4,
-    "traffic_signals_arrow_yes": 0,
-    "traffic_signals_arrow_no": 1,
-    "traffic_signals_minimap_yes": 0,
-    "traffic_signals_minimap_no": 1,
-    "traffic_signals_audio_yes": 0,
-    "traffic_signals_audio_no": 0,
-    "traffic_signals_audio_locate": 0,
-    "traffic_signals_audio_walk": 0
+    "id": "all_tags",
+    "count": 5646
+  },
+  {
+    "id": "wheelchair_yes",
+    "count": 315
+  },
+  {
+    "id": "wheelchair_no",
+    "count": 154
+  },
+  {
+    "id": "wheelchair_limited",
+    "count": 112
+  },
+  {
+    "id": "wheelchair_designated",
+    "count": 1
+  },
+  {
+    "id": "speech_output_yes",
+    "count": 1
+  },
+  {
+    "id": "speech_output_no",
+    "count": 0
+  },
+  {
+    "id": "speech_input_yes",
+    "count": 0
+  },
+  {
+    "id": "speech_input_no",
+    "count": 0
+  },
+  {
+    "id": "tactile_writing_embossed_yes",
+    "count": 0
+  },
+  {
+    "id": "tactile_writing_embossed_no",
+    "count": 0
+  },
+  {
+    "id": "tactile_writing_engraved_yes",
+    "count": 0
+  },
+  {
+    "id": "tactile_writing_engraved_no",
+    "count": 0
+  },
+  {
+    "id": "tactile_writing_braille_yes",
+    "count": 0
+  },
+  {
+    "id": "tactile_writing_braille_no",
+    "count": 0
+  },
+  {
+    "id": "tactile_writing_computer_braille_yes",
+    "count": 0
+  },
+  {
+    "id": "tactile_writing_computer_braille_no",
+    "count": 0
+  },
+  {
+    "id": "tactile_writing_fakoo_yes",
+    "count": 0
+  },
+  {
+    "id": "tactile_writing_fakoo_no",
+    "count": 0
+  },
+  {
+    "id": "tactile_writing_moon_yes",
+    "count": 0
+  },
+  {
+    "id": "tactile_writing_moon_no",
+    "count": 0
+  },
+  {
+    "id": "information_tactile_map",
+    "count": 0
+  },
+  {
+    "id": "information_tactile_model",
+    "count": 0
+  },
+  {
+    "id": "wheelchair_desc",
+    "count": 1
+  },
+  {
+    "id": "deaf_desc",
+    "count": 1
+  },
+  {
+    "id": "blind_desc",
+    "count": 0
+  },
+  {
+    "id": "tactile_paving_yes",
+    "count": 42
+  },
+  {
+    "id": "tactile_paving_no",
+    "count": 22
+  },
+  {
+    "id": "tactile_paving_contrasted",
+    "count": 0
+  },
+  {
+    "id": "tactile_paving_primitive",
+    "count": 0
+  },
+  {
+    "id": "tactile_paving_incorrect",
+    "count": 1
+  },
+  {
+    "id": "ramp_yes",
+    "count": 0
+  },
+  {
+    "id": "ramp_no",
+    "count": 0
+  },
+  {
+    "id": "ramp_wheelchair_yes",
+    "count": 0
+  },
+  {
+    "id": "ramp_wheelchair_no",
+    "count": 0
+  },
+  {
+    "id": "kerb_lowered",
+    "count": 26
+  },
+  {
+    "id": "kerb_flush",
+    "count": 4
+  },
+  {
+    "id": "traffic_signals_floor_vibration_yes",
+    "count": 0
+  },
+  {
+    "id": "traffic_signals_floor_vibration_no",
+    "count": 0
+  },
+  {
+    "id": "traffic_signals_vibration_yes",
+    "count": 3
+  },
+  {
+    "id": "traffic_signals_vibration_no",
+    "count": 4
+  },
+  {
+    "id": "traffic_signals_arrow_yes",
+    "count": 0
+  },
+  {
+    "id": "traffic_signals_arrow_no",
+    "count": 1
+  },
+  {
+    "id": "traffic_signals_minimap_yes",
+    "count": 0
+  },
+  {
+    "id": "traffic_signals_minimap_no",
+    "count": 1
+  },
+  {
+    "id": "traffic_signals_audio_yes",
+    "count": 0
+  },
+  {
+    "id": "traffic_signals_audio_no",
+    "count": 0
+  },
+  {
+    "id": "traffic_signals_audio_locate",
+    "count": 0
+  },
+  {
+    "id": "traffic_signals_audio_walk",
+    "count": 0
   }
 ]
